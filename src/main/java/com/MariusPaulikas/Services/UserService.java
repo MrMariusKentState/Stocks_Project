@@ -6,6 +6,8 @@ import java.util.Optional;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 
+import com.MariusPaulikas.Models.Banking;
+import com.MariusPaulikas.Models.Brokerage;
 import com.MariusPaulikas.Models.User;
 import com.MariusPaulikas.Repositories.UserRepository;
 
@@ -44,5 +46,68 @@ public class UserService {
 	}
 	
 	
+	public User findByEmail(String email) {
+		return userrepository.findByEmail(email);
+	}
+	
+	
+	public User findUserById(Long id) {
+		Optional<User>u = userrepository.findById(id);
+		
+		if(u.isPresent()) {
+			return u.get();
+		} else {
+			return null;
+		}
+	}
 
+	
+	public boolean authenticateUser(String email, String password) {
+		User user = userrepository.findByEmail(email);
+		if(user == null) {
+			return false;
+		} else {
+			
+			if(BCrypt.checkpw(password, user.getPassword())) {
+				return true;
+		} 	else {
+				return false;
+		}
+	}
+	
+	}	
+	
+	
+	public User AddBankAccount (User u, Banking b) {
+		List<Banking>bankaccounts = u.getAddbankacct();
+		bankaccounts.add(b);
+		return userrepository.save(u);
+		
+	}
+	
+	
+	public User RemoveBankAccount (User u, Banking b) {
+		List<Banking>bankaccounts = u.getAddbankacct();
+		bankaccounts.remove(b);
+		return userrepository.save(u);
+	}
+		
+	
+	
+	public User AddBrokerageAccount (User u, Brokerage br) {
+		List<Brokerage>brokerageaccounts = u.getAddbrokerageacct();
+		brokerageaccounts.add(br);
+		return userrepository.save(u);
+	}
+	
+	
+	public User RemoveBrokerageAccount (User u, Brokerage br) {
+		List<Brokerage>brokerageaccounts = u.getAddbrokerageacct();
+		brokerageaccounts.remove(br);
+		return userrepository.save(u);
+	
+	
+	}
+	
+	
 }
