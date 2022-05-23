@@ -3,9 +3,12 @@ package com.MariusPaulikas.Services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.MariusPaulikas.Models.Banking;
 import com.MariusPaulikas.Repositories.BankingRepository;
 
+@Service
 public class BankingService { 
 	
 	private final BankingRepository bankingrepository;

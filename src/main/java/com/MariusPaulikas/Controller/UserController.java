@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.MariusPaulikas.Services.BankingService;
 import com.MariusPaulikas.Services.BrokerageService;
 import com.MariusPaulikas.Services.UserService;
-import com.MariusPaulikas.Servlet.Models.User;
 import com.MariusPaulikas.Validator.UserValidator;
 
 @Controller
@@ -35,11 +34,10 @@ public class UserController {
 	}
 	
 	
-//	@RequestMapping("/home")
-//	public String HomePage(@ModelAttribute("newuser") User user )  {
-//		return "LoginRegister.jsp";
-//	}
-//	
+	@RequestMapping("/")
+	public String HomePage()  {
+		return "home.jsp";
+	}
 	
 	
 	
