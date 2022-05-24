@@ -34,7 +34,7 @@ public class UserController {
 	}
 	
 	
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	public String HomePage()  {
 		return "home.jsp";
 	}

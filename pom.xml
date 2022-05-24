@@ -17,6 +17,8 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -85,6 +87,9 @@
             <artifactId>jbcrypt</artifactId>
             <version>0.4</version>
         </dependency>
+        
+        
+        
 	</dependencies>
 
 	<build>
