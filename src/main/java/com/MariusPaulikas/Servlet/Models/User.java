@@ -1,4 +1,4 @@
-package com.MariusPaulikas.Models;
+package com.MariusPaulikas.Servlet.Models;
 
 import java.util.List;
 

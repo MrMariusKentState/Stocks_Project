@@ -1,12 +1,12 @@
-package com.MariusPaulikas.Services;
+package com.MariusPaulikas.Servlet.Services;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.MariusPaulikas.Models.Brokerage;
-import com.MariusPaulikas.Repositories.BrokerageRepository;
+import com.MariusPaulikas.Servlet.Models.Brokerage;
+import com.MariusPaulikas.Servlet.Repositories.BrokerageRepository;
 
 @Service
 public class BrokerageService {

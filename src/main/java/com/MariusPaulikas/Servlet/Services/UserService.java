@@ -1,4 +1,4 @@
-package com.MariusPaulikas.Services;
+package com.MariusPaulikas.Servlet.Services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,10 +6,10 @@ import java.util.Optional;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 
-import com.MariusPaulikas.Models.Banking;
-import com.MariusPaulikas.Models.Brokerage;
-import com.MariusPaulikas.Models.User;
-import com.MariusPaulikas.Repositories.UserRepository;
+import com.MariusPaulikas.Servlet.Models.Banking;
+import com.MariusPaulikas.Servlet.Models.Brokerage;
+import com.MariusPaulikas.Servlet.Models.User;
+import com.MariusPaulikas.Servlet.Repositories.UserRepository;
 
 
 @Service

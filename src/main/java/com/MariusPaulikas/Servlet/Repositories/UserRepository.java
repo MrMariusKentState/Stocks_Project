@@ -1,11 +1,11 @@
-package com.MariusPaulikas.Repositories;
+package com.MariusPaulikas.Servlet.Repositories;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.MariusPaulikas.Models.User;
+import com.MariusPaulikas.Servlet.Models.User;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {

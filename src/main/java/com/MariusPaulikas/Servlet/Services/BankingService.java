@@ -1,12 +1,12 @@
-package com.MariusPaulikas.Services;
+package com.MariusPaulikas.Servlet.Services;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.MariusPaulikas.Models.Banking;
-import com.MariusPaulikas.Repositories.BankingRepository;
+import com.MariusPaulikas.Servlet.Models.Banking;
+import com.MariusPaulikas.Servlet.Repositories.BankingRepository;
 
 @Service
 public class BankingService { 

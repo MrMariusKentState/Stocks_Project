@@ -1,12 +1,12 @@
-package com.MariusPaulikas.Validator;
+package com.MariusPaulikas.Servlet.Validator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
-import com.MariusPaulikas.Models.User;
-import com.MariusPaulikas.Repositories.UserRepository;
+import com.MariusPaulikas.Servlet.Models.User;
+import com.MariusPaulikas.Servlet.Repositories.UserRepository;
 
 @Component
 public class UserValidator implements Validator {
