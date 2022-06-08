@@ -11,7 +11,7 @@
 <meta charset="ISO-8859-1">
 <title>Stock investor</title>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/resources/static/home.css"/>
+<link rel="stylesheet" href="/static/home.css"/>
 
 </head>
 
