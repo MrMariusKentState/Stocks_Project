@@ -86,7 +86,14 @@ public class UserController {
 	
 	
 	@RequestMapping("/dashboard")
-	public String Dashboard() {
+	public String Dashboard(HttpSession session, Model model) {
+		if (session.getAttribute("userId") == null) {
+			return "redirect:/home";
+		}
+		
+		Long l = (Long)session.getAttribute("userId");
+		User user = userservice.findUserById(l);
+		model.addAttribute("user", user);
 		return "dashboard.jsp";
 	}
 	

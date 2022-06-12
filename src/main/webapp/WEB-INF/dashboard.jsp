@@ -11,7 +11,7 @@
 <meta charset="ISO-8859-1">
 <title>Stock investor</title>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/static/home.css"/>
+<link rel="stylesheet" href="/home.css"/>
 
 </head>
 
@@ -20,6 +20,7 @@
 	<div id = "container">
 		<h1>Dashboard page!</h1>
 	</div>
+	<h3>Welcome, <c:out value = "${user.firstname}" />!</h3>
 	<h3>Your current portfolio consists of $$$ dollars.</h3>
 </body>
 </html>
