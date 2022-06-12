@@ -22,5 +22,6 @@
 	</div>
 	<h3>Welcome, <c:out value = "${user.firstname}" />!</h3>
 	<h3>Your current portfolio consists of $$$ dollars.</h3>
+	<p>Stock API:  https://polygon.io/dashboard </p>
 </body>
 </html>
