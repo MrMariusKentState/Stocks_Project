@@ -12,7 +12,7 @@
 	
 }
 
-
-#test {
-	color: red;
+#leftcol, #rightcol {
+	display: inline-block;
+	vertical-align: top;
 }

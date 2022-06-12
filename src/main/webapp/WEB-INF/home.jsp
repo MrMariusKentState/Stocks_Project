@@ -11,7 +11,7 @@
 <meta charset="ISO-8859-1">
 <title>Stock investor</title>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/static/home.css"/>
+<link rel="stylesheet" href="/home.css"/>
 
 </head>
 
@@ -19,7 +19,7 @@
 <body>
 	<div id = "container">
 		<div id = "leftcol">
-			<p class = "welcome">Create a free account! </p>
+			<h1 class = "welcome">Create a free account! </h1>
 	 		<form:form method="POST" action="/registration/submit" modelAttribute="newuser">
 		 
 		        <p>
@@ -62,7 +62,7 @@
 	   		</form:form>
 		</div>
 		<div id = "rightcol">
-			<p class = "welcome">Login to track your stock portfolio!</p>
+			<h1 class = "welcome">Login to track your stock portfolio!</h1>
     		<form:form method="POST" action="/login" modelAttribute="newuser">
     			<p id = "loginconfirm"><c:out value = "${error}"/></p>
      				<p>
