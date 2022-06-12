@@ -3,16 +3,36 @@
 * {
 	margin: 0;
 	padding: 0;
-}
-
-#container {
-	width: 980px;
-	margin-left: auto;
-	margin-right: auto;
+	
 	
 }
+
+
+#container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightgreen;
+	
+}
+
+h1{
+	text-align: center;
+}
+
+
+
 
 #leftcol, #rightcol {
 	display: inline-block;
 	vertical-align: top;
+	
+}
+
+#leftcol {
+	margin-left: 50px;
+}
+
+#rightcol {
+	margin-left: 50px;
 }

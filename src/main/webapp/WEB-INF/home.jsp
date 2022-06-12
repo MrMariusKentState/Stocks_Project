@@ -18,8 +18,11 @@
 
 <body>
 	<div id = "container">
+	<h1>Track your stocks and account balances with MyTrade!</h1>
+	<br>
+	<br>	
 		<div id = "leftcol">
-			<h1 class = "welcome">Create a free account! </h1>
+			<h3 class = "welcome">Create a free account! </h3>
 	 		<form:form method="POST" action="/registration/submit" modelAttribute="newuser">
 		 
 		        <p>
@@ -62,7 +65,7 @@
 	   		</form:form>
 		</div>
 		<div id = "rightcol">
-			<h1 class = "welcome">Login to track your stock portfolio!</h1>
+			<h3 class = "welcome">Login to track your stock portfolio!</h3>
     		<form:form method="POST" action="/login" modelAttribute="newuser">
     			<p id = "loginconfirm"><c:out value = "${error}"/></p>
      				<p>
@@ -77,6 +80,7 @@
         		<input type="submit" class="btn btn-primary" value="Login"/>
      		</form:form>
 		</div>
+		
 		
 	</div>
 
