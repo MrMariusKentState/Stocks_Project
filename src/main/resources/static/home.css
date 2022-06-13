@@ -35,3 +35,8 @@ h1{
 #rightcol {
 	margin-left: 50px;
 }
+
+#loginconfirm {
+	color: red;
+}
+
